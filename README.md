@@ -1,4 +1,4 @@
-## Welcome to Lravel
+## Welcome to Laravel
 
 FOR MORE INFORMATION ABOUT LARAVEL VIST BELOW LINKS
 
