@@ -19,7 +19,8 @@
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
-                background-image: url('../resources/assets/img/landing.jpeg');
+             /*   background-image: url('../resources/assets/img/landing.jpeg');*/
+                background-image: url({{ asset('/resources/assets/img/landing.jpeg')}});
                 background-repeat: no-repeat;
                 background-size: cover;
                 /* <img src="../resources/assets/img/landing.jpeg" alt="dgfghgh" 
