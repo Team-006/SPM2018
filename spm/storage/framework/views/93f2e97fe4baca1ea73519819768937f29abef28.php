@@ -27,6 +27,7 @@
                 <a class="navbar-brand" href="<?php echo e(url('/home')); ?>">
                    Home
                 </a>
+                <a href="/formi3">Form I-3</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<?php echo e(__('Toggle navigation')); ?>">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -71,7 +72,7 @@
                 </div>
             </div>
         </nav>
-        <?php echo $__env->make('inc.navbar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
         <main class="py-4">
             <?php echo $__env->yieldContent('content'); ?>
         </main>
