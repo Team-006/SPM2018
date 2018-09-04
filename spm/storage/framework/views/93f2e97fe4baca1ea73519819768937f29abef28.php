@@ -72,7 +72,7 @@
                 </div>
             </div>
         </nav>
-
+        <?php echo $__env->make('inc.navbar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         <main class="py-4">
             <?php echo $__env->yieldContent('content'); ?>
         </main>
