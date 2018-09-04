@@ -22,3 +22,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/formi3', function () {
     return view('formi3');
 });
+
+
+Route::get('/form/i1','FormsController@formI1');
