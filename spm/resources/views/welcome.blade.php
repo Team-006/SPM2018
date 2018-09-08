@@ -20,7 +20,7 @@
                 height: 100vh;
                 margin: 0;
              /*   background-image: url('../resources/assets/img/landing.jpeg');*/
-                background-image: url({{ asset('/resources/assets/img/landing.jpeg')}});
+                background-image: url({{asset('/img/landing.jpeg')}});
                 background-repeat: no-repeat;
                 background-size: cover;
                 /* <img src="../resources/assets/img/landing.jpeg" alt="dgfghgh" 
@@ -53,12 +53,14 @@
 
             .title {
                 font-size: 84px;
+                color: black;
+                font-weight: bold
             }
 
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 12px;
+                font-size: 18px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -70,36 +72,42 @@
             }
         </style>
     </head>
-    <body>
-           
+    <body>       
+         
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+            {{-- @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                        
                     @else
+                   
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
-            @endif
+            @endif --}}
           
-            {{-- <div class="content"> --}}
-                {{-- <div class="title m-b-md">
-                    Laravel
+             <div class="content">
+                 <div class="title m-b-md">
+                    Welcome To Industrial Traning Unit Of SLIIT
                 </div>
-
+                @if (Route::has('login'))
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div> --}}
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                       
+                    @else
+                   
+                        <a  href="{{ route('login') }}">Login</a>
+                        <a  href="{{ route('register') }}">Register</a>
+                    @endauth
+                </div>
+                @endif
           
-            {{-- </div> --}}
+            </div>
         </div>
+   
     </body>
 </html>
 

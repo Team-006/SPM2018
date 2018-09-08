@@ -20,7 +20,7 @@
                 height: 100vh;
                 margin: 0;
              /*   background-image: url('../resources/assets/img/landing.jpeg');*/
-                background-image: url(<?php echo e(asset('/resources/assets/img/landing.jpeg')); ?>);
+                background-image: url(<?php echo e(asset('/img/landing.jpeg')); ?>);
                 background-repeat: no-repeat;
                 background-size: cover;
                 /* <img src="../resources/assets/img/landing.jpeg" alt="dgfghgh" 
@@ -53,12 +53,14 @@
 
             .title {
                 font-size: 84px;
+                color: black;
+                font-weight: bold
             }
 
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 12px;
+                font-size: 18px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -70,25 +72,31 @@
             }
         </style>
     </head>
-    <body>
-           
+    <body>       
+         
         <div class="flex-center position-ref full-height">
-            <?php if(Route::has('login')): ?>
-                <div class="top-right links">
+            
+          
+             <div class="content">
+                 <div class="title m-b-md">
+                    Welcome To Industrial Traning Unit Of SLIIT
+                </div>
+                <?php if(Route::has('login')): ?>
+                <div class="links">
                     <?php if(auth()->guard()->check()): ?>
                         <a href="<?php echo e(url('/home')); ?>">Home</a>
+                       
                     <?php else: ?>
-                        <a href="<?php echo e(route('login')); ?>">Login</a>
-                        <a href="<?php echo e(route('register')); ?>">Register</a>
+                   
+                        <a  href="<?php echo e(route('login')); ?>">Login</a>
+                        <a  href="<?php echo e(route('register')); ?>">Register</a>
                     <?php endif; ?>
                 </div>
-            <?php endif; ?>
+                <?php endif; ?>
           
-            
-                
-          
-            
+            </div>
         </div>
+   
     </body>
 </html>
 
