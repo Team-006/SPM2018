@@ -19,11 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/formi3', function () {
+Route::get('/form/i3', function () {
     return view('formi3');
 });
 
 
 Route::get('/form/i1','FormsController@formI1');
 
-Route::resource('f1','FormsController');

@@ -2,6 +2,7 @@
 
 @section('content')
 
+<div class="container">
 <form>
 
         <div class="form-group row">
@@ -162,11 +163,11 @@
     <div class="form-group row">
 
       <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Genarate Form i-1</button>
       </div>
 
    
   </form>
-
+</div>
 
 @endsection
