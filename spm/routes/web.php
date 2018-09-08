@@ -24,5 +24,9 @@ Route::get('/form/i3', function () {
 });
 
 
-Route::get('/form/i1','FormsController@formI1');
+//Route::get('/form/i1','FormsController@formI1');
+
+Route::get('/form/i1', function () {
+    return view('pages.form_i_1');
+});
 

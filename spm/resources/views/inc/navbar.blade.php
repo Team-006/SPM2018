@@ -9,7 +9,7 @@
         </li>
 
         <li class="nav-item active">
-          <a class="nav-link" href="f1">Form I-1 <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/SPM2018/spm/public/form/i1">Form I-1 <span class="sr-only">(current)</span></a>
         </li> 
 
          <li class="nav-item active">

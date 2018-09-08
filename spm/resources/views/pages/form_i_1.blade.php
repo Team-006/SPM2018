@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container">
+  
 <form>
 
         <div class="form-group row">
@@ -159,14 +160,21 @@
             
                 </div>
 
-
-    <div class="form-group row">
-
-      <div class="col-sm-10">
+                <div class="row">
+   
+                    <div class="col-md-10">
+                        <label for="worl" class="col-md-20 col-form-label"></label>
+                    </div>
+                  
+                  </div>
+                <div class="row">
+   
+      <div class="col-md-10">
+          <label for="worl" class="col-md-20 col-form-label"> </label>
         <button type="submit" class="btn btn-primary">Genarate Form i-1</button>
       </div>
-
-   
+    
+    </div>
   </form>
 </div>
 
