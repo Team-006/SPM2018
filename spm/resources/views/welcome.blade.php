@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+      
+
         <style>
             html, body {
                 /* background-color: #fff; */
@@ -48,16 +50,20 @@
             }
 
             .content {
+                padding: 150px 60px;
                 text-align: center;
+               background-color: #e6ffff;
+                opacity: 0.7;
+                border-radius: 8px;
             }
 
             .title {
-                font-size: 84px;
+                font-size:50px;
                 color: black;
                 font-weight: bold
             }
 
-            .links > a {
+            /* .links > a {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 18px;
@@ -65,12 +71,14 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
-            }
+                height: 50px;
+            } */
 
             .m-b-md {
                 margin-bottom: 30px;
             }
         </style>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>       
          
@@ -99,8 +107,8 @@
                        
                     @else
                    
-                        <a  href="{{ route('login') }}">Login</a>
-                        <a  href="{{ route('register') }}">Register</a>
+                        <a class="btn btn-success btn-lg" style="width: 170px;border:thin grey" href="{{ route('login') }}">Login</a>
+                        <a class="btn btn-success btn-lg"style="width: 170px ;border:thin grey" href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
                 @endif
