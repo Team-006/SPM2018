@@ -27,3 +27,5 @@ Route::get('/formi3', function () {
 Route::get('/form/i1','FormsController@formI1');
 
 Route::resource('f1','FormsController');
+Route::get('create','FormsController@downloadWordDoc');
+Route::post('store','FormsController@downloadWordDocStore');
