@@ -30,10 +30,10 @@ class LoginTest extends TestCase
 
  
 
-    public function test_user_cannot_view_a_login_form_when_authenticated()
-    {
-        $user = factory(User::class)->make();
-        $response = $this->actingAs($user)->get('/login');
-        $response->assertRedirect('/home');
-    }
+    // public function test_user_cannot_view_a_login_form_when_authenticated()
+    // {
+    //     $user = factory(User::class)->make();
+    //     $response = $this->actingAs($user)->get('/login');
+    //     $response->assertRedirect('/home');
+    // }
 }
