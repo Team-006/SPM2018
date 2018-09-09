@@ -16,37 +16,37 @@
 
       <label for="inputStudenId" class="col-sm-2 col-form-label">Student ID No</label>
       <div class="col-sm-10">
-        <input type="idno" class="form-control" id="inputStudenId" placeholder="Student ID N">
+        <input type="idno" class="form-control" id="inputStudenId" placeholder="Student ID N"  required>
       </div>
 
 
       <label for="inputName" class="col-sm-2 col-form-label">Student's Name</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputName" placeholder="Name">
+        <input type="text" class="form-control" id="inputName" placeholder="Name" required>
       </div>
 
 
       <label for="address" class="col-sm-2 col-form-label">Address</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="address" placeholder="Address">
+        <input type="text" class="form-control" id="address" placeholder="Address" required>
       </div>
 
 
       <label for="homephone" class="col-sm-2 col-form-label">Home Phone</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="homephone" placeholder="Home Phone">
+        <input type="text" class="form-control" id="homephone" placeholder="Home Phone" required>
       </div>
 
 
       <label for="mobilephone" class="col-sm-2 col-form-label">Mobile Phone</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="mobilephone" placeholder="Mobile Phone">
+        <input type="text" class="form-control" id="mobilephone" placeholder="Mobile Phone" required>
       </div>
 
 
       <label for="email" class="col-sm-2 col-form-label">E-mail Address</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="email" placeholder="E-mail Address">
+        <input type="text" class="form-control" id="email" placeholder="E-mail Address" required>
       </div>
 
 
@@ -55,17 +55,17 @@
     
                 <div class="col-md-4" >
                         <label for="semester" class="col-sm-8">City</label>
-                        <input type="text" class="form-control" id="semester">
+                        <input type="text" class="form-control" id="semester" required>
                       </div>
 
                       <div class="form-group col-md-4">
                             <label for="year">Year</label>
-                            <input type="text" class="form-control" id="year">
+                            <input type="text" class="form-control" id="year" required>
                           </div>
                      
                       <div class="form-group col-md-4">
                         <label for="cgpa">CGPA</label>
-                        <input type="text" class="form-control" id="cgpa">
+                        <input type="text" class="form-control" id="cgpa" required>
                       </div>
 
         </div>
