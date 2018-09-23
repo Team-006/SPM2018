@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Formi6;
+use PDF;
 
 class Formi6Controller extends Controller
 {
@@ -29,5 +30,13 @@ class Formi6Controller extends Controller
         $formi6 = Formi6::all();
   
         return view('formi6Details', compact('formi6'));
+      }
+
+      public function downloadPDF($id){
+        $formi6 = Formi6::find($id);
+  
+        $pdf = PDF::loadView('pdf', compact('formi6'));
+        return $pdf->download('sample.pdf');
+  
       }
 }
