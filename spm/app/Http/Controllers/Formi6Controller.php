@@ -24,10 +24,10 @@ class Formi6Controller extends Controller
         $formi6->save();
         return redirect('/home');
       }
-    //   public function index(){
+      public function index(){
   
-    //     $formi6 = Formi6::all();
+        $formi6 = Formi6::all();
   
-    //     return view('index', compact('users'));
-    //   }
+        return view('formi6Details', compact('formi6'));
+      }
 }

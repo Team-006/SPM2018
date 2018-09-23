@@ -31,6 +31,6 @@ Route::get('/form/i6', function () {
 Route::get('/form/i1', function () {
     return view('pages.form_i_1');
 });
-
+Route::get('/formi6Details','Formi6Controller@index');
 Route::post('submitForm','Formi6Controller@store');
-Route::get('/downloadPDF','UserDetailController@downloadPDF');
+Route::get('/downloadPDF/{id}','Formi6Controller@downloadPDF');

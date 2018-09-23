@@ -75,6 +75,7 @@
                                 required rows="7"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
+      
                       </form>
                 </div>
             </div>
