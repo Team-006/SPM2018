@@ -33,3 +33,4 @@ Route::get('/form/i1', function () {
 });
 
 Route::post('submitForm','Formi6Controller@store');
+Route::get('/downloadPDF','UserDetailController@downloadPDF');
