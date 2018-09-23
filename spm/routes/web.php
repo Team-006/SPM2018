@@ -32,3 +32,4 @@ Route::get('/form/i1', function () {
     return view('pages.form_i_1');
 });
 
+Route::post('submitForm','Formi6Controller@store');
