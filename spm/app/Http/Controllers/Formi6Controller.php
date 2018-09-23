@@ -23,7 +23,7 @@ class Formi6Controller extends Controller
         ]);
   
         $formi6->save();
-        return redirect('/home');
+        return redirect('/formi6Details');
       }
       public function index(){
   

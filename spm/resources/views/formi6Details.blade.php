@@ -24,7 +24,8 @@
                             <td>{{$form->objectives}}</td>
                             <td>{{$form->procedures}}</td>
                             <td>{{$form->methodology}}</td>
-                            <button type="submit" class="btn btn-success"><a href="{{action('Formi6Controller@downloadPDF',$form->id)}}">PDF</a></button>
+                            <td><a class="btn btn-success" href="{{action('Formi6Controller@downloadPDF',$form->id)}}"> 
+                                <span class="glyphicon glyphicon-download"></span>PDF</a></td>
                           </tr>
                           @endforeach
                         </tbody>
