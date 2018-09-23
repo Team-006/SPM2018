@@ -18,51 +18,60 @@
                         <b>1 INTRODUCTION</b> 
                         <div class="form-group">
                           <label for="textarea">Company Overview</label>
-                          <input type="textarea" class="form-control" id="name" 
-                          placeholder="Please give a brief description of the organisation and the department you carried out your internship" required>
+                          <textarea class="form-control" id="exampleFormControlTextarea3" 
+                          placeholder="Please give a brief description of the organisation and the department you carried out your internship" 
+                          required rows="7"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="textarea">Project Overview</label>
-                            <input type="textarea" class="form-control" id="sid" 
-                            placeholder="Please give an overview of the project(s) that you worked during your internship period" required>
+                            <textarea class="form-control" id="exampleFormControlTextarea3" 
+                            placeholder="Please give an overview of the project(s) that you worked during your internship period" 
+                            required rows="7"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="textarea">Sample</label>
-                            <input type="textarea" class="form-control" id="address" placeholder="Enter address" required>
+                            <textarea class="form-control" id="exampleFormControlTextarea3" 
+                            placeholder="" 
+                            required rows="7"></textarea>
                         </div>
                         <b> 2 INTERNSHIP INSIGHT</b>
                         <div class="form-group">
                             <label for="textarea">Objectives</label>
-                            <input type="textarea" class="form-control" id="sid" 
-                            placeholder="Please describe the company's objectives for the internship" required>
+                            <textarea class="form-control" id="exampleFormControlTextarea3" 
+                            placeholder="Please describe the company's objectives for the internship" 
+                            required rows="7"></textarea>
                         </div> 
                         <div class="form-group">
                           <label for="textarea">Procedures</label>
-                          <input type="textarea" class="form-control" id="number" 
-                          placeholder="Please describe the procedures followed during the internship" required>
+                          <textarea class="form-control" id="exampleFormControlTextarea3" 
+                            placeholder="Please describe the procedures followed during the internship" 
+                            required rows="7"></textarea>
                         </div>
                         <div class="form-group">
                                 <label for="textarea">Methodology</label>
-                                <input type="textarea" class="form-control" id="number" 
-                                placeholder="Please describe the methodology you used during the internship" required>
+                                <textarea class="form-control" id="exampleFormControlTextarea3" 
+                                placeholder="Please describe the methodology you used during the internship" 
+                                required rows="7"></textarea>
                         </div>
                         <b>3 LEARNING OUTCOME</b>
                         <div class="form-group">
                           <label for="textarea">Learning</label>
-                          <input type="textarea" class="form-control" id="email" 
-                          placeholder="Please describe what student learned during the internship period" required>
+                          <textarea class="form-control" id="exampleFormControlTextarea3" 
+                          placeholder="Please describe what student learned during the internship period" 
+                          required rows="7"></textarea>
                         </div>
 
                         <div class="form-group">
                                 <label for="textarea">Measurable Outcome</label>
-                                <input type="textarea" class="form-control" id="number" 
-                                placeholder="Please describe the measurable outcomes of the project" required>
+                                <textarea class="form-control" id="exampleFormControlTextarea3" 
+                                placeholder="Please describe the measurable outcomes of the project" 
+                                required rows="7"></textarea>
                         </div>
                         <div class="form-group">
                                 <label for="textarea">Effectiveness of the Effort</label>
-                                <input type="textarea" class="form-control" id="number" 
+                                <textarea class="form-control" id="exampleFormControlTextarea3" 
                                 placeholder="Student should describe how effective was the effort he spent by drawing the analysis of the experience gained during the internship period with classroom material he studied" 
-                                required>
+                                required rows="7"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </form>

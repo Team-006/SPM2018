@@ -22,7 +22,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/form/i3', function () {
     return view('formi3');
 });
-
+Route::get('/form/i6', function () {
+    return view('formi6');
+});
 
 //Route::get('/form/i1','FormsController@formI1');
 
