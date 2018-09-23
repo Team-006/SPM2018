@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">INTERNSHIP REPORT</div>
+                <div class="card-header"><b>INTERNSHIP REPORT</b></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +14,7 @@
                         </div>
                     @endif
                     
-                    <form>
+                    <form method="post" action="{{url('submitForm')}}">
                         <b>1 INTRODUCTION</b> 
                         <div class="form-group">
                           <label for="textarea">Company Overview</label>
