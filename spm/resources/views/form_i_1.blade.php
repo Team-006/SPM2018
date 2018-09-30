@@ -4,8 +4,8 @@
 
 <div class="container">
   
-<form>
-
+<form method="post" action="{{url('store')}}">
+  @csrf
         <div class="form-group row">
     
                 <h2 class="col-sm-8">To be filled by the student</h2>
@@ -16,19 +16,19 @@
 
       <label for="inputStudenId" class="col-sm-2 col-form-label">Student ID No</label>
       <div class="col-sm-10">
-        <input type="idno" class="form-control" id="inputStudenId" placeholder="Student ID N"  required>
+        <input type="idno" class="form-control" name="inputStudenId" placeholder="Student ID N"  required>
       </div>
 
 
       <label for="inputName" class="col-sm-2 col-form-label">Student's Name</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+        <input type="text" class="form-control" name="inputName" placeholder="Name" required>
       </div>
 
 
       <label for="address" class="col-sm-2 col-form-label">Address</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="address" placeholder="Address" required>
+        <input type="text" class="form-control" name="address" placeholder="Address" required>
       </div>
 
 
