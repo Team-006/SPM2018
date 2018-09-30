@@ -38,13 +38,13 @@ class DocumentController extends Controller
         
         $phpWord = new \PhpOffice\PhpWord\PhpWord();
         $section = $phpWord->addSection();
-        $text = $section->addText($request->get('name'));
-        $text = $section->addText($request->get('email'));
-        $text = $section->addText($request->get('number'),array('name'=>'Arial','size' => 20,'bold' => true));
+        $text = $section->addText($request->get('inputStudenId'));
+        $text = $section->addText($request->get('inputName'));
+        $text = $section->addText($request->get('address'),array('name'=>'Arial','size' => 20,'bold' => true));
        // $section->addImage("./images/Krunal.jpg");  
         $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
-        $objWriter->save('Appdividend.docx');
-        return response()->download(public_path('Appdividend.docx'));
+        $objWriter->save('FormI1.docx');
+        return response()->download(public_path('FormI1.docx'));
 
     }
 
