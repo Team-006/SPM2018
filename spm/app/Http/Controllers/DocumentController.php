@@ -93,17 +93,14 @@ class DocumentController extends Controller
         //$textrun = $section->addTextRun(array('alignment' => \PhpOffice\PhpWord\SimpleType\Jc::CENTER));
 
         //$textrun->addText('Employer\'s Name');
-        $paragraphStyleName = 'pStyle';
-        $phpWord->addParagraphStyle($paragraphStyleName, array('spacing' => 100));
-        
-        $textrun = $section->addTextRun($paragraphStyleName);
-        $textrun->addText('Each textrun can contain native text, link elements or an image.');
+       
 
+        $section->addText('Employer\'s Name',array('bold' => true));
         $textbox = $section->addTextBox(
 
             array(
         
-                'alignment'   => \PhpOffice\PhpWord\SimpleType\Jc::CENTER,
+                'alignment'   => \PhpOffice\PhpWord\SimpleType\Jc::LEFT,
         
                 'width'       => 200,
         
@@ -114,7 +111,160 @@ class DocumentController extends Controller
                 'borderColor' => '#000000',
             )
         );
-        $textbox->addText('Text box content in section.');
+        $textbox->addText('Employer\'s Name', array('color' => '555555'));
+
+
+        $section->addText('Employer\'s Address',array('bold' => true));
+        $textbox = $section->addTextBox(
+
+            array(
+        
+                'alignment'   => \PhpOffice\PhpWord\SimpleType\Jc::LEFT,
+        
+                'width'       => 200,
+        
+                'height'      => 20,
+        
+                'borderSize'  => 1,
+        
+                'borderColor' => '#000000',
+            )
+        );
+        $textbox->addText('Employer\'s Address', array('color' => '555555'));
+
+
+        $section->addText('Supervisor\'s Name',array('bold' => true));
+        $textbox = $section->addTextBox(
+
+            array(
+        
+                'alignment'   => \PhpOffice\PhpWord\SimpleType\Jc::LEFT,
+        
+                'width'       => 200,
+        
+                'height'      => 20,
+        
+                'borderSize'  => 1,
+        
+                'borderColor' => '#000000',
+            )
+        );
+        $textbox->addText('Supervisor\'s Name', array('color' => '555555'));
+
+
+        $section->addText('Supervisor\'s Phone No',array('bold' => true));
+        $textbox = $section->addTextBox(
+
+            array(
+        
+                'alignment'   => \PhpOffice\PhpWord\SimpleType\Jc::LEFT,
+        
+                'width'       => 200,
+        
+                'height'      => 20,
+        
+                'borderSize'  => 1,
+        
+                'borderColor' => '#000000',
+            )
+        );
+        $textbox->addText('Supervisor\'s Phone No', array('color' => '555555'));
+
+
+        $section->addText('Intership Start Date',array('bold' => true));
+        $textbox = $section->addTextBox(
+
+            array(
+        
+                'alignment'   => \PhpOffice\PhpWord\SimpleType\Jc::LEFT,
+        
+                'width'       => 200,
+        
+                'height'      => 20,
+        
+                'borderSize'  => 1,
+        
+                'borderColor' => '#000000',
+            )
+        );
+        $textbox->addText('Intership Start Date', array('color' => '555555'));
+
+
+        $section->addText('Intership End Date',array('bold' => true));
+        $textbox = $section->addTextBox(
+
+            array(
+        
+                'alignment'   => \PhpOffice\PhpWord\SimpleType\Jc::LEFT,
+        
+                'width'       => 200,
+        
+                'height'      => 20,
+        
+                'borderSize'  => 1,
+        
+                'borderColor' => '#000000',
+            )
+        );
+        $textbox->addText('Intership End Date', array('color' => '555555'));
+
+
+        $section->addText('Supervisor\'s Title',array('bold' => true));
+        $textbox = $section->addTextBox(
+
+            array(
+        
+                'alignment'   => \PhpOffice\PhpWord\SimpleType\Jc::LEFT,
+        
+                'width'       => 200,
+        
+                'height'      => 20,
+        
+                'borderSize'  => 1,
+        
+                'borderColor' => '#000000',
+            )
+        );
+        $textbox->addText('Supervisor\'s Title', array('color' => '555555'));
+
+
+        $section->addText('Supervisor\'s E-mail',array('bold' => true));
+        $textbox = $section->addTextBox(
+
+            array(
+        
+                'alignment'   => \PhpOffice\PhpWord\SimpleType\Jc::LEFT,
+        
+                'width'       => 200,
+        
+                'height'      => 20,
+        
+                'borderSize'  => 1,
+        
+                'borderColor' => '#000000',
+            )
+        );
+        $textbox->addText('Supervisor\'s E-mail', array('color' => '555555'));
+
+
+        $section->addText('No of Hours/Week',array('bold' => true));
+        $textbox = $section->addTextBox(
+
+            array(
+        
+                'alignment'   => \PhpOffice\PhpWord\SimpleType\Jc::LEFT,
+        
+                'width'       => 200,
+        
+                'height'      => 20,
+        
+                'borderSize'  => 1,
+        
+                'borderColor' => '#000000',
+            )
+        );
+        $textbox->addText('No of Hours/Week', array('color' => '555555'));
+
 
         // $header = $section->addHeader();
         // $textbox = $header->addTextBox(array('width' => 600, 'borderSize' => 1, 'borderColor' => '#000000'));
