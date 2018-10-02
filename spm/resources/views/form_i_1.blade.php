@@ -16,7 +16,7 @@
 
       <label for="inputStudenId" class="col-sm-2 col-form-label">Student ID No</label>
       <div class="col-sm-10">
-        <input type="idno" class="form-control" name="inputStudenId" placeholder="Student ID N"  required>
+        <input type="idno" class="form-control" name="inputStudenId" placeholder="Student ID No"  required>
       </div>
 
 
@@ -34,19 +34,19 @@
 
       <label for="homephone" class="col-sm-2 col-form-label">Home Phone</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="homephone" placeholder="Home Phone" required>
+        <input type="text" class="form-control" name="homephone" placeholder="Home Phone" required>
       </div>
 
 
       <label for="mobilephone" class="col-sm-2 col-form-label">Mobile Phone</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="mobilephone" placeholder="Mobile Phone" required>
+        <input type="text" class="form-control" name="mobilephone" placeholder="Mobile Phone" required>
       </div>
 
 
       <label for="email" class="col-sm-2 col-form-label">E-mail Address</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="email" placeholder="E-mail Address" required>
+        <input type="text" class="form-control" name="email" placeholder="E-mail Address" required>
       </div>
 
 
@@ -54,18 +54,18 @@
         <div class="form-row">
     
                 <div class="col-md-4" >
-                        <label for="semester" class="col-sm-8">City</label>
-                        <input type="text" class="form-control" id="semester" required>
+                        <label for="semester" class="col-sm-8">Semester</label>
+                        <input type="text" class="form-control" name="semester" required>
                       </div>
 
                       <div class="form-group col-md-4">
                             <label for="year">Year</label>
-                            <input type="text" class="form-control" id="year" required>
+                            <input type="text" class="form-control" name="year" required>
                           </div>
                      
                       <div class="form-group col-md-4">
                         <label for="cgpa">CGPA</label>
-                        <input type="text" class="form-control" id="cgpa" required>
+                        <input type="text" class="form-control" name="cgpa" required>
                       </div>
 
         </div>
