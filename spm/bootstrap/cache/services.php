@@ -28,10 +28,11 @@
     24 => 'Collective\\Html\\HtmlServiceProvider',
     25 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     26 => 'Collective\\Html\\HtmlServiceProvider',
-    27 => 'App\\Providers\\AppServiceProvider',
-    28 => 'App\\Providers\\AuthServiceProvider',
-    29 => 'App\\Providers\\EventServiceProvider',
-    30 => 'App\\Providers\\RouteServiceProvider',
+    27 => 'Unisharp\\Ckeditor\\ServiceProvider',
+    28 => 'App\\Providers\\AppServiceProvider',
+    29 => 'App\\Providers\\AuthServiceProvider',
+    30 => 'App\\Providers\\EventServiceProvider',
+    31 => 'App\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -46,10 +47,11 @@
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
     10 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
-    11 => 'App\\Providers\\AppServiceProvider',
-    12 => 'App\\Providers\\AuthServiceProvider',
-    13 => 'App\\Providers\\EventServiceProvider',
-    14 => 'App\\Providers\\RouteServiceProvider',
+    11 => 'Unisharp\\Ckeditor\\ServiceProvider',
+    12 => 'App\\Providers\\AppServiceProvider',
+    13 => 'App\\Providers\\AuthServiceProvider',
+    14 => 'App\\Providers\\EventServiceProvider',
+    15 => 'App\\Providers\\RouteServiceProvider',
   ),
   'deferred' => 
   array (

@@ -1,7 +1,7 @@
 @extends('layouts.forms')
-
 @section('content')
 @include('inc.messages')
+
 {!! Form::open(['action'=>'ProgressController@store','method'=>'POST']) !!}
 <div class="container">
         <div class="row justify-content-center">
@@ -14,7 +14,7 @@
                         <br/> 
                         <div class="form-group">
                          <br/>
-                         {{Form::textarea('body','',[ 'rows'=>'10' ,'cols'=>'80', 'placeholder'=>'Type Your Monthly Progress And The Date Will Be Taken As The Date This Has Been Submitted'])}}
+                         {{Form::textarea('body','',[ 'id'=>'article-ckeditor','rows'=>'10' ,'cols'=>'80', 'placeholder'=>'Type Your Monthly Progress And The Date Will Be Taken As The Date This Has Been Submitted'])}}
                          <br/> 
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
@@ -36,7 +36,7 @@
                        <br>
                        <br>
                            <div class="well">
-                            <p>{{$progressItem->body}}</p>
+                            <p>{!!$progressItem->body!!}</p>
                             <hr>
                             <small>Added on {{$progressItem->created_at}}</small> 
                            </div>

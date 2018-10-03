@@ -35,10 +35,15 @@
     } );
     </script>
 </head>
+
 <body>
 
  @include('inc.navbar')
+
  @yield('content')
-  
+ <script src="{{ URL::asset('../vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+ <script>
+     CKEDITOR.replace( 'article-ckeditor' );
+ </script>
 </body>
 </html>
