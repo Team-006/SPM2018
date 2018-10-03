@@ -40,7 +40,11 @@ class ProgressController extends Controller
         $this->validate($request,[
             'body'=>'required'
         ]);
-        return 123;
+        //create progress
+        $progress=new Progress;
+        $progress->body=$request->input('body');
+        $progress->save();
+        return redirect('/progress')->with('success','Progress added');
     }
 
     /**

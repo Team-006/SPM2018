@@ -1,7 +1,7 @@
 @extends('layouts.forms')
 
 @section('content')
-
+@include('inc.messages')
 {!! Form::open(['action'=>'ProgressController@store','method'=>'POST']) !!}
 <div class="container">
         <div class="row justify-content-center">
@@ -33,11 +33,15 @@
                        <h2> <b>Previous Progress</b></h2>
                        @if(count($progress)>0)
                        @foreach ($progress as $progressItem)
+                       <br>
+                       <br>
                            <div class="well">
                             <p>{{$progressItem->body}}</p>
                             <hr>
                             <small>Added on {{$progressItem->created_at}}</small> 
                            </div>
+                           <br>
+                           <br>
                        @endforeach
                        @else
                        <p>There Is No Reported Progress Yet</p>
