@@ -19,9 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/form/i3', function () {
-    return view('formi3');
-});
+// Route::get('/form/i3', function () {
+//     return view('formi3');
+// });
 
 
 //Route::get('/form/i1','FormsController@formI1');
@@ -29,4 +29,6 @@ Route::get('/form/i3', function () {
 Route::get('/form/i1', function () {
     return view('pages.form_i_1');
 });
+
+Route::resource('progress','ProgressController');
 
