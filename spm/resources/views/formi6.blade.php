@@ -14,7 +14,7 @@
                         </div>
                     @endif
                     
-                    <form method="post" action="{{url('submitForm')}}">
+                    <form method="post" action="{{url('submitForm')}}"  id="form">
                             {{ csrf_field() }}
                         <b>1 INTRODUCTION</b> 
                         <div class="form-group">
@@ -74,12 +74,15 @@
                                 placeholder="Student should describe how effective was the effort he spent by drawing the analysis of the experience gained during the internship period with classroom material he studied" 
                                 required rows="7"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-      
+                            <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-success">Submit</button>&nbsp;&nbsp;
+                                    <button type="button" id="btn" class="btn btn-danger">Reset</button>
+                            </div>
                       </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 @endsection

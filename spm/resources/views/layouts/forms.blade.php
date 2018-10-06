@@ -34,6 +34,16 @@
       });
     } );
     </script>
+
+<script>
+    $(document).ready(function()
+    {
+        $("#btn").click(function()
+        {
+            $("#form")[0].reset();
+        });
+    });
+</script>
 </head>
 
 <body>
