@@ -17,22 +17,35 @@
                     <form method="post" action="{{url('submitForm')}}">
                             {{ csrf_field() }}
                         
-                        
-                        <div class="col-sm-4">
-                            <input type="idno" class="form-control" id="inputStudenId" placeholder="Student ID"  required>
-                        </div><br/>
+                            <table>
+                            <tbody>
+                                <tr>
+                                    <td width="250px"> <input type="idno" class="form-control" id="inputStudenId" placeholder="Student ID"  required></td>
+                                    <td width="60px"></td>
+                                    <td width="250px"><input type="idno" class="form-control" id="inputStudenId" placeholder="Student Name"  required></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td width="250px"> <input type="idno" class="form-control" id="inputStudenId" placeholder="Employer's Name"  required></td>
+                                    <td width="60px"></td>
+                                    <td width="250px"><input type="idno" class="form-control" id="inputStudenId" placeholder="Supervisor's Name"  required></td>
+                                </tr>
 
-                        <div class="col-sm-4">
-                            <input type="idno" class="form-control" id="inputStudenId" placeholder="Student Name"  required>
-                        </div><br/>
-
-                        <div class="col-sm-4">
-                            <input type="idno" class="form-control" id="inputStudenId" placeholder="Employer's Name"  required>
-                        </div><br/>
-
-                        <div class="col-sm-4">
-                            <input type="idno" class="form-control" id="inputStudenId" placeholder="Supervisor's Name"  required>
-                        </div><br/>
+                            </tbody>
+                        </table>   <br/><br/>                    
+                       
 
                         <div class="form-group">
                           <label for="textarea">Describe the differences, if any, between student's initial contract and actual assignment which developed
@@ -42,7 +55,7 @@
                         </div>
                         
                         <div><br/>
-                        <b>PERFORMANCE OF STUDENT</b> <br/>
+                        <b><u>PERFORMANCE OF STUDENT</u></b> <br/>
                         <br/><table border  width="700">
                             <thead>
                                 <tr>
@@ -139,10 +152,11 @@
                             </tbody>
                         </table>
                         </div>
+                        <b>Note: Please make sure to tick only one check box for each category</b>
 
 
                         <div><br/>
-                        <b>WORK HABITS OF STUDENT</b> <br/>
+                        <b><u>WORK HABITS OF STUDENT</u></b> <br/>
                         <br/><table border  width="700">
                             <thead>
                                 <tr>
@@ -222,8 +236,35 @@
                             </tbody>
                         </table>
                         </div>
+                        <b>Note: Please make sure to tick only one check box for each category</b>
+                        <br/><br/>
 
-                        <br/><button type="submit" class="btn btn-primary">Submit</button>
+                        <div>
+                        <b><u>OVERALL STUDENT PERFORMANCE</u></b><br/><br/>
+                        <table width="700">
+                            <tbody>
+                                <td><input type="checkbox"> Outstanding</td>
+                                <td><input type="checkbox"> Very Good</td>
+                                <td><input type="checkbox"> Good</td>
+                                <td><input type="checkbox"> Marginal</td>
+                                <td><input type="checkbox"> Unsatisfactory</td>
+                            </tbody>
+                        </table>
+                        <b>Note: Please make sure to tick only one check box</b>
+    
+                        </div><br/><br/>
+
+                        This report has been discussed with the  student<br/><br/>
+
+                        <table>
+                            <tbody>
+                                <td width="250px"> <input type="idno" class="form-control" id="inputStudenId" placeholder="External Supervisor's Name"  required></td>
+                                <td width="30px"><input type="date" class="form-control" id="inputStudenId" placeholder="Date"  required></td>
+                            </tbody>
+                        </table>
+                        
+
+                        <br/><br/><button type="submit" class="btn btn-primary">Email The Form</button>
       
                       </form>
                 </div>
