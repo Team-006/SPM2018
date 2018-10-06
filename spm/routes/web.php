@@ -19,31 +19,25 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-<<<<<<< HEAD
 Route::get('/form/i3', function () {
     return view('formi3');
 });
 Route::get('/form/i6', function () {
     return view('formi6');
 });
-=======
 // Route::get('/form/i3', function () {
 //     return view('formi3');
 // });
 
->>>>>>> yasiru
 
 //Route::get('/form/i1','FormsController@formI1');
 
 Route::get('/form/i1', function () {
     return view('pages.form_i_1');
 });
-<<<<<<< HEAD
 Route::get('/formi6Details','Formi6Controller@index');
 Route::post('submitForm','Formi6Controller@store');
 Route::get('/downloadPDF/{id}','Formi6Controller@downloadPDF');
-=======
 
 Route::resource('progress','ProgressController');
 
->>>>>>> yasiru
