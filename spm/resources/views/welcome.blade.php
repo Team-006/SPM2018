@@ -83,35 +83,31 @@
     <body>       
          
         <div class="flex-center position-ref full-height">
-            {{-- @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
+           
+                <!-- <div class="top-right links">
+               
                         <a href="{{ url('/home') }}">Home</a>
-                       
-                    @else
+                
                    
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif --}}
+                        <a href="{{ url('/login') }}">Login</a>
+                        <a href="{{ url('/register') }}">Register</a>
+             
+                </div> -->
+   
           
              <div class="content">
                  <div class="title m-b-md">
                     Welcome To Industrial Traning Unit Of SLIIT
                 </div>
-                @if (Route::has('login'))
+               
                 <div class="links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                       
-                    @else
+            
                    
-                        <a class="btn btn-success btn-lg" style="width: 170px;border:thin grey" href="{{ route('login') }}">Login</a>
-                        <a class="btn btn-success btn-lg"style="width: 170px ;border:thin grey" href="{{ route('register') }}">Register</a>
-                    @endauth
+                        <a class="btn btn-success btn-lg" style="width: 170px;border:thin grey" href="{{ url('/login') }}">Login</a>
+                        <a class="btn btn-success btn-lg"style="width: 170px ;border:thin grey" href="{{ url('/register') }}">Register</a>
+             
                 </div>
-                @endif
+    
           
             </div>
         </div>
