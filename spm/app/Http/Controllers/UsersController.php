@@ -109,7 +109,7 @@ $student = DB::select("SELECT StudentID From tbl_students WHERE StudentID = $stu
 //        exit();
 		return $pass;
             
-	}
+	
 
     }
 }
