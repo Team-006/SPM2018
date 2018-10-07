@@ -8,13 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Generated Intership Report</h3>
+    <h3 class="text-center">Generated Intership Report</h3>
      <table class="table table-bordered table-striped">
          <thead>
+           <tr>
             <th>Company Overview</th>
             <th>Project Overview</th>
             <th>procedures</th>
             <th>Objectives</th>
+           </tr>
          </thead>
          <tbody>
                     <tr>
