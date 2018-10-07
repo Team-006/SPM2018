@@ -15,15 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
 Route::get('/login', 'UsersController@login');
 ROute::get('/register', 'UsersController@register');
 Route::post('/insertUser', 'UsersController@insert');
-=======
 
 Auth::routes();
 
->>>>>>> samith
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/form/i3', function () {
