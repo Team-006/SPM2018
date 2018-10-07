@@ -1,6 +1,41 @@
 @extends('layouts.forms')
 
 @section('content')
+<script>
+    function check1a(){
+        if(document.getElementById('check1').checked == true){
+            document.getElementById('check2').disabled = true;
+            document.getElementById('check3').disabled = true;
+        }
+        if(document.getElementById('check1').checked == false){
+            document.getElementById('check2').disabled = false;
+            document.getElementById('check3').disabled = false;
+        }        
+    }
+
+    function check1b(){
+        if(document.getElementById('check2').checked == true){
+            document.getElementById('check1').disabled = true;
+            document.getElementById('check3').disabled = true;
+        }
+        if(document.getElementById('check2').checked == false){
+            document.getElementById('check1').disabled = false;
+            document.getElementById('check3').disabled = false;
+        }        
+    }
+
+    function check1c(){
+        if(document.getElementById('check3').checked == true){
+            document.getElementById('check1').disabled = true;
+            document.getElementById('check2').disabled = true;
+        }
+        if(document.getElementById('check3').checked == false){
+            document.getElementById('check1').disabled = false;
+            document.getElementById('check2').disabled = false;
+        }        
+    }
+   
+</script>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -14,15 +49,15 @@
                         </div>
                     @endif
                     
-                    <form method="post" action="{{url('submitForm')}}">
+                    <form action="mailto:you@yourdmainhere.com" method="post">
                             {{ csrf_field() }}
                         
                             <table>
                             <tbody>
                                 <tr>
-                                    <td width="250px"> <input type="idno" class="form-control" id="inputStudenId" placeholder="Student ID"  required></td>
+                                    <td width="250px"> <input type="idno" class="form-control" id="inputStudenId" placeholder="Student ID"  value="IT16120280"  required></td>
                                     <td width="60px"></td>
-                                    <td width="250px"><input type="idno" class="form-control" id="inputStudenId" placeholder="Student Name"  required></td>
+                                    <td width="250px"><input type="idno" class="form-control" id="inputStudenId" placeholder="Student Name"  value="N.P.Seneviratne"  required></td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -38,9 +73,9 @@
                                 </tr>
                                 
                                 <tr>
-                                    <td width="250px"> <input type="idno" class="form-control" id="inputStudenId" placeholder="Employer's Name"  required></td>
+                                    <td width="250px"> <input type="idno" class="form-control" id="inputStudenId" placeholder="Employer's Name"  value="Mr Perera"  required></td>
                                     <td width="60px"></td>
-                                    <td width="250px"><input type="idno" class="form-control" id="inputStudenId" placeholder="Supervisor's Name"  required></td>
+                                    <td width="250px"><input type="idno" class="form-control" id="inputStudenId" placeholder="Supervisor's Name"  value="Mr Ruwan"  required></td>
                                 </tr>
 
                             </tbody>
@@ -70,9 +105,9 @@
                             <tbody>                                
                                 <tr>
                                     <td> Volume of work </td>
-                                    <td style="text-align: center;"> <input type="checkbox"> </td>
-                                    <td style="text-align: center;"> <input type="checkbox"> </td>
-                                    <td style="text-align: center;"> <input type="checkbox"> </td>
+                                    <td style="text-align: center;"> <input id="check1" type="checkbox" onclick="check1a()"> </td>
+                                    <td style="text-align: center;"> <input id="check2" type="checkbox" onclick="check1b()"> </td>
+                                    <td style="text-align: center;"> <input id="check3" type="checkbox" onclick="check1c()"> </td>
                                     <td> <input type="idno" class="form-control" id="inputStudenId"> </td>                                   
                                 </tr>        
 
@@ -258,13 +293,13 @@
 
                         <table>
                             <tbody>
-                                <td width="250px"> <input type="idno" class="form-control" id="inputStudenId" placeholder="External Supervisor's Name"  required></td>
-                                <td width="30px"><input type="date" class="form-control" id="inputStudenId" placeholder="Date"  required></td>
+                                <td width="250px"> <input type="idno" class="form-control" id="inputStudenId" placeholder="External Supervisor's Name" value="Mr Gamage"  required></td>
+                                <td width="30px"><input type="date" class="form-control" id="inputStudenId" placeholder="Date" value="<?php echo date('Y-m-d'); ?>" required></td>
                             </tbody>
                         </table>
                         
 
-                        <br/><br/><button type="submit" class="btn btn-primary">Email The Form</button>
+                        <br/><br/><button onclick="location.href='mailto:em@i.l';" type="submit" class="btn btn-primary">Email The Form</button>
       
                       </form>
                 </div>
