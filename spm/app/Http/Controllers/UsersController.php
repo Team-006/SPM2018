@@ -73,4 +73,43 @@ $student = DB::select("SELECT StudentID From tbl_students WHERE StudentID = $stu
         // $studentId=$req->input('studentId');
         
     }
+
+    function checkuser(){
+        $username = $_GET['usernames'];
+		$password = $_GET['password'];
+		
+		$user  = DB::table('users')
+        ->where('name',$username)
+        ->first();
+
+        $pass="incorrect";
+
+        if(!empty($user)) {
+           
+
+	if($password== $user->password){
+       
+                session()->put('userid', $user->id);
+                session()->put('usertypeid', $user->user_type);
+         
+                session()->put('lifetime', 120);
+
+                $pass = "correct";
+
+
+
+            } else {
+                $pass = "incorrect";
+            }
+        }
+        else{
+            $pass = "incorrect";
+
+        }//       echo $pass;
+//        exit();
+		return $pass;
+            
+	}
+
+    }
 }
